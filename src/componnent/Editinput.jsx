@@ -7,11 +7,11 @@ export default function Editinput(props) {
 
     useEffect(() => {
 
-        document.getElementById('title').value = props.val.title
-        document.getElementById('description').value = props.val.description
-        document.getElementById('status').value = props.val.status
-        document.getElementById('category').value = props.val.category
-        document.getElementById('dedline').value = props.val.dedline
+        document.getElementById('title').value = props.taskslist[props.result].title
+        document.getElementById('description').value = props.taskslist[props.result].description
+        document.getElementById('status').value = props.taskslist[props.result].status
+        document.getElementById('category').value = props.taskslist[props.result].category
+        document.getElementById('dedline').value = props.taskslist[props.result].dedline
     })
 
 
@@ -27,7 +27,6 @@ export default function Editinput(props) {
         if (title == '' || description == '' || status == '' || category == '' || dedline == '') {
 
             return
-
         }
         else {
 
@@ -38,7 +37,7 @@ export default function Editinput(props) {
 
 
     return (
-        <div>
+        <div >
             <h1>Editinput</h1>
 
             <input type="text" id="title" /><br />
