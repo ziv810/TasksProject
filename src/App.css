@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+.menudiv {
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.tasksdiv {
+
+  flex-direction: column;
+  margin: 40px 500px 40px;
+}
